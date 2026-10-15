@@ -1,0 +1,6 @@
+# Transcripts are for internal use only and must not be published
+assets/transcripts/
+
+# macOS service files
+._*
+.DS_Store

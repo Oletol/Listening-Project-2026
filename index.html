@@ -427,6 +427,37 @@
     .glide-row{grid-template-columns:minmax(145px,1fr) minmax(145px,1fr)}
     .empty-material{border:1px dashed var(--line-2);padding:48px 32px;text-align:center;font-family:var(--serif);font-style:italic;color:var(--muted);font-size:18px}
 
+    /* ---------- Sound pairs (weeks 4–5) ---------- */
+    .sound-pair{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px}
+    .sound-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:clamp(24px,3.5vw,40px)}
+    .sound-card-ink{background:var(--ink);border-color:var(--ink);color:var(--on-ink)}
+    .sound-symbol{font-family:var(--sans);font-weight:300;font-size:72px;line-height:1;letter-spacing:-.02em;color:var(--accent);margin-bottom:20px}
+    .sound-card-ink .sound-symbol{color:var(--accent-on-ink)}
+    .sound-card h3{font-family:var(--serif);font-weight:400;font-size:28px;line-height:1.15;color:var(--ink);margin-bottom:12px;font-variation-settings:"SOFT" 30,"WONK" 0}
+    .sound-card-ink h3{color:#fff}
+    .sound-card p{font-size:15px;line-height:1.65;color:var(--muted);margin-bottom:24px}
+    .sound-card-ink p{color:var(--on-ink-2)}
+    .feature-list{margin:0;border-top:1px solid var(--line)}
+    .sound-card-ink .feature-list{border-color:var(--ink-line)}
+    .feature-list div{display:grid;grid-template-columns:96px 1fr;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+    .sound-card-ink .feature-list div{border-color:var(--ink-line)}
+    .feature-list dt{font-family:var(--serif);font-style:italic;font-size:15px;color:var(--muted)}
+    .sound-card-ink .feature-list dt{color:var(--on-ink-3)}
+    .feature-list dd{margin:0;font-size:15px;color:var(--text)}
+    .sound-card-ink .feature-list dd{color:#fff}
+    .spelling-card>p{font-size:16px;max-width:760px}
+    .spelling-table{display:grid;grid-template-columns:200px 1fr;margin-top:24px;border-top:1px solid var(--line)}
+    .spelling-table div{padding:14px 16px 14px 0;border-bottom:1px solid var(--line)}
+    .spelling-label{font-size:15px;font-weight:500;color:var(--accent)}
+    .spelling-examples{font-family:var(--serif);font-size:17px;color:var(--text-2)}
+    .classification-row.context-row,.classification-row.articulation-row{grid-template-columns:minmax(0,1fr) 156px;gap:16px}
+    .articulation-row strong{font-size:16px;font-weight:500;line-height:1.45}
+    .context-row strong{font-family:var(--serif);font-weight:400;font-size:18px;line-height:1.4}
+    .speaking-pass{margin-top:24px;padding:28px 32px;border-left:2px solid var(--accent);background:var(--paper)}
+    .speaking-pass p{font-family:var(--serif);font-style:italic;font-size:18px;line-height:1.6;color:var(--text-2);margin:0;max-width:760px}
+    @media(max-width:900px){.sound-pair{grid-template-columns:1fr}}
+    @media(max-width:600px){.sound-symbol{font-size:56px}.feature-list div{grid-template-columns:80px 1fr;gap:12px}.spelling-table{grid-template-columns:1fr}.spelling-table div{padding:10px 0}.spelling-label{border-bottom:0!important;padding-bottom:0!important}.classification-row.context-row,.classification-row.articulation-row{grid-template-columns:1fr;gap:10px}.speaking-pass{padding:20px}}
+
     /* ---------- Progress ---------- */
     .progress-panel{background:var(--ink);color:var(--on-ink);border-radius:var(--r);padding:clamp(28px,5vw,64px);display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center}
     .progress-panel .section-kicker{color:var(--accent-on-ink)}
@@ -760,6 +791,62 @@
           </div>
         </section>
 
+        <section class="section" id="week4-theory-practice" data-page="week" hidden>
+          <div class="section-head">
+            <div><div class="section-kicker">Theory and practice · Week 4</div><h2 class="section-title">One region — two settings</h2><p class="section-copy">Both vowels are front and high, but /i/ is higher, more peripheral, and tense; /ɪ/ is slightly lower, more central, and lax.</p></div>
+          </div>
+          <div class="sound-pair"><article class="sound-card sound-card-ink"><div class="sound-symbol">/i/</div><h3>Tense front high vowel</h3><p>The tongue is raised very high toward the roof of the mouth. The mouth is nearly closed, the lips are slightly drawn back, and the articulators use more muscular effort.</p><dl class="feature-list"><div><dt>Tongue</dt><dd>highest and most front position</dd></div><div><dt>Mouth</dt><dd>almost closed</dd></div><div><dt>Setting</dt><dd>tense and peripheral</dd></div><div><dt>Examples</dt><dd>beat, seat, sheep, feel</dd></div></dl></article><article class="sound-card"><div class="sound-symbol">/ɪ/</div><h3>Lax front near-high vowel</h3><p>The front of the tongue is slightly lower and somewhat more central. The mouth is a little more open, while the rest of the vocal tract remains relaxed.</p><dl class="feature-list"><div><dt>Tongue</dt><dd>high, but lower and more central</dd></div><div><dt>Mouth</dt><dd>slightly more open</dd></div><div><dt>Setting</dt><dd>lax and relaxed</dd></div><div><dt>Examples</dt><dd>bit, sit, ship, fill</dd></div></dl></article></div>
+          <article class="theory-card spelling-card">
+            <div class="section-kicker">Spelling map</div>
+            <h3>The spelling is a clue — not a guarantee.</h3>
+            <p>This course uses broad American /i/. Many learner dictionaries write the same tense vowel as /iː/.</p>
+            <div class="spelling-table"><div class="spelling-label">/i/ — ea</div><div class="spelling-examples">beach, clean, cream, dream, each, heat, meal, reach</div><div class="spelling-label">/i/ — ee</div><div class="spelling-examples">feel, feet, fleece, keep, need, see, street</div><div class="spelling-label">/i/ — e, ie, i, eo</div><div class="spelling-examples">even, theme, complete · believe, field · police · people</div><div class="spelling-label">/ɪ/ — i, y, u, o</div><div class="spelling-examples">sit, little, six · rhythm, symbol · busy · women</div></div>
+          </article>
+          <div class="practice-grid week3-practice-grid">
+            <article class="practice-card">
+              <div class="section-kicker">Practice 01</div><h3>Build the articulatory setting</h3>
+              <p>Assign each instruction or observation to the vowel it describes.</p>
+              <div id="week4ArticulationRows"></div>
+              <div class="assessment-actions"><button class="study-btn known" id="week4CheckArticulation" type="button">Check settings</button><button class="study-btn" id="week4ResetArticulation" type="button">Reset</button><span class="assessment-feedback" id="week4ArticulationFeedback" aria-live="polite"></span></div>
+            </article>
+            <article class="practice-card">
+              <div class="section-kicker">Practice 02</div><h3>Choose the intended word</h3>
+              <p>Use sentence meaning to select the correct member of each /i/–/ɪ/ minimal pair.</p>
+              <div id="week4ContextRows"></div>
+              <div class="assessment-actions"><button class="study-btn known" id="week4CheckContext" type="button">Check choices</button><button class="study-btn" id="week4ResetContext" type="button">Reset</button><span class="assessment-feedback" id="week4ContextFeedback" aria-live="polite"></span></div>
+            </article>
+          </div>
+          <aside class="speaking-pass"><div class="section-kicker">Final speaking pass</div><p>Read each completed sentence aloud twice. On the second reading, exaggerate the tense–lax contrast slightly; then return to a natural speaking rhythm.</p></aside>
+        </section>
+
+        <section class="section" id="week5-theory-practice" data-page="week" hidden>
+          <div class="section-head">
+            <div><div class="section-kicker">Theory and practice · Week 5</div><h2 class="section-title">One vowel space — two heights</h2><p class="section-copy">Both sounds are front and traditionally classified as lax. The central contrast is tongue height: /ɛ/ is front mid-low, while /æ/ is front low.</p></div>
+          </div>
+          <div class="sound-pair"><article class="sound-card sound-card-ink"><div class="sound-symbol">/ɛ/</div><h3>Front mid-low vowel</h3><p>Place the tongue in a middle-to-low front position and keep the lips and mouth relaxed. Release the air without forcing the sound.</p><dl class="feature-list"><div><dt>Tongue</dt><dd>front and mid-low</dd></div><div><dt>Jaw</dt><dd>moderately open</dd></div><div><dt>Setting</dt><dd>relaxed and lax</dd></div><div><dt>Examples</dt><dd>bed, men, pen, weather</dd></div></dl></article><article class="sound-card"><div class="sound-symbol">/æ/</div><h3>Front low vowel</h3><p>Open the jaw more, raise the middle of the tongue, and place the tongue tip behind the lower teeth. The greater opening may require noticeable muscular effort.</p><dl class="feature-list"><div><dt>Tongue</dt><dd>front and low; middle raised</dd></div><div><dt>Jaw</dt><dd>widely open</dd></div><div><dt>Setting</dt><dd>traditionally lax</dd></div><div><dt>Examples</dt><dd>bad, man, bag, happy</dd></div></dl></article></div>
+          <article class="theory-card spelling-card">
+            <div class="section-kicker">Context effect</div>
+            <h3>/æ/ changes before some consonants.</h3>
+            <p>The recording describes /æ/ as longer and tenser before nasal consonants such as /n, m/ and before certain voiced consonants such as /d, g/. Compare the vowel in <i>fan–fat</i> and <i>bag–back</i>. This is a phonetic change: the word still contains the phoneme /æ/.</p>
+            <div class="spelling-table"><div class="spelling-label">/ɛ/ — e</div><div class="spelling-examples">bell, desk, help, pen, sell, wet, yes</div><div class="spelling-label">/ɛ/ — ea</div><div class="spelling-examples">bread, dead, head, health, ready, weather</div><div class="spelling-label">/æ/ — a</div><div class="spelling-examples">act, bad, bag, family, hand, match, plan</div><div class="spelling-label">/æ/ — unusual</div><div class="spelling-examples">laugh, meringue, plaid</div></div>
+          </article>
+          <div class="practice-grid week3-practice-grid">
+            <article class="practice-card">
+              <div class="section-kicker">Practice 01</div><h3>Read the articulatory evidence</h3>
+              <p>Assign each instruction or observation to the vowel it describes.</p>
+              <div id="week5ArticulationRows"></div>
+              <div class="assessment-actions"><button class="study-btn known" id="week5CheckArticulation" type="button">Check settings</button><button class="study-btn" id="week5ResetArticulation" type="button">Reset</button><span class="assessment-feedback" id="week5ArticulationFeedback" aria-live="polite"></span></div>
+            </article>
+            <article class="practice-card">
+              <div class="section-kicker">Practice 02</div><h3>Choose the intended word</h3>
+              <p>Use sentence meaning to select the correct member of each /æ/–/ɛ/ minimal pair.</p>
+              <div id="week5ContextRows"></div>
+              <div class="assessment-actions"><button class="study-btn known" id="week5CheckContext" type="button">Check choices</button><button class="study-btn" id="week5ResetContext" type="button">Reset</button><span class="assessment-feedback" id="week5ContextFeedback" aria-live="polite"></span></div>
+            </article>
+          </div>
+          <aside class="speaking-pass"><div class="section-kicker">Final speaking pass</div><p>Read each completed sentence aloud twice. On the second reading, exaggerate the jaw opening for /æ/ slightly, keep /ɛ/ more relaxed, and then return to a natural speaking rhythm.</p></aside>
+        </section>
+
         <section class="section" id="lab" data-page="week">
           <div class="section-head">
             <div><div class="section-kicker">Listening lab</div><h2 class="section-title">One recording — three passes</h2><p class="section-copy">Each weekly recording opens here. Listen first for the big picture, then for examples, and finally for pronunciation detail.</p></div>
@@ -1037,6 +1124,135 @@
               </div>
             </article>
           </div>
+          <div class="week-content-grid" id="week4Content" hidden>
+            <article class="material-card">
+              <div class="material-card-head">
+                <div><div class="section-kicker">In-class discussion</div><h3>Part 4 — Front High Vowels</h3><p class="material-intro">These transcript-based questions move from articulation to meaning, spelling, and practice. They are not graded.</p></div>
+                <div class="material-stat"><strong>13</strong><span>questions</span></div>
+              </div>
+              <div class="question-groups">
+                <details class="question-group" open>
+                  <summary><span class="question-group-no">01</span><span class="question-group-title"><strong>Articulation of /i/</strong><span>Height, closure, and muscular tension</span></span><span class="question-toggle">Close</span></summary>
+                  <ol class="question-list">
+                    <li>Where is the tongue positioned when /i/ is produced, and how open is the mouth?</li>
+                    <li>Why is /i/ classified as a tense vowel in the recording?</li>
+                    <li>Which adjustments to the lips and tongue help a learner produce /i/ accurately?</li>
+                  </ol>
+                </details>
+                <details class="question-group">
+                  <summary><span class="question-group-no">02</span><span class="question-group-title"><strong>Articulation of /ɪ/</strong><span>A lower, more central, relaxed vowel</span></span><span class="question-toggle">Open</span></summary>
+                  <ol class="question-list" start="4">
+                    <li>How is the tongue position for /ɪ/ different from the position for /i/?</li>
+                    <li>Why is /ɪ/ classified as a lax vowel?</li>
+                    <li>What should remain relaxed when a learner produces /ɪ/, and how does the mouth opening change?</li>
+                  </ol>
+                </details>
+                <details class="question-group">
+                  <summary><span class="question-group-no">03</span><span class="question-group-title"><strong>Meaning and intelligibility</strong><span>Why a small sound contrast matters</span></span><span class="question-toggle">Open</span></summary>
+                  <ol class="question-list" start="7">
+                    <li>Why is it especially important for non-native speakers to distinguish /i/ and /ɪ/?</li>
+                    <li>Which potentially embarrassing substitutions does the recording use to demonstrate the consequences of confusing these vowels?</li>
+                    <li>Give at least five neutral minimal pairs for /ɪ/ and /i/. Which pair is most difficult for you?</li>
+                  </ol>
+                </details>
+                <details class="question-group">
+                  <summary><span class="question-group-no">04</span><span class="question-group-title"><strong>Spelling and practice</strong><span>Many spellings, one contrast</span></span><span class="question-toggle">Open</span></summary>
+                  <ol class="question-list" start="10">
+                    <li>Which letter combinations can represent the tense /i/ sound? Give one example for each pattern mentioned.</li>
+                    <li>Which spellings can represent /ɪ/? Why can learners not rely on the written vowel alone?</li>
+                    <li>How do minimal-pair drills train both listening and pronunciation?</li>
+                    <li>Why does the recording move from isolated words to sentences containing both sounds?</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="material-card-head">
+                <div><div class="section-kicker">Independent self-check</div><h3>Check your understanding of /i/ and /ɪ/</h3><p class="material-intro">Complete the test after listening. Each answer is checked immediately, and the answer choices are shuffled on every attempt.</p></div>
+                <div class="material-stat"><strong id="week4SelfCheckScore">0%</strong><span>best score</span></div>
+              </div>
+              <div class="self-check-grid single">
+                <section class="assessment-panel" aria-labelledby="week4QuizTitle">
+                  <div class="assessment-panel-head"><div><h4 id="week4QuizTitle">Front high vowels — listening comprehension</h4><p>Choose the best answer based on Part 4 of the recording.</p></div><span class="assessment-count">10 questions</span></div>
+                  <div id="week4QuizMain">
+                    <div class="quiz-progress" aria-hidden="true"><div class="quiz-progress-fill" id="week4QuizProgress"></div></div>
+                    <div class="quiz-number" id="week4QuizNumber"></div>
+                    <div class="quiz-question" id="week4QuizQuestion"></div>
+                    <div class="quiz-options" id="week4QuizOptions"></div>
+                    <div class="quiz-explanation" id="week4QuizExplanation" aria-live="polite"></div>
+                    <div class="assessment-actions"><button class="study-btn known" id="checkWeek4Quiz" type="button">Check answer</button><button class="study-btn" id="nextWeek4Quiz" type="button" hidden>Next question</button><span class="assessment-feedback" id="week4QuizFeedback"></span></div>
+                  </div>
+                  <div class="quiz-result" id="week4QuizResult"><strong id="week4QuizResultScore"></strong><p id="week4QuizResultText"></p><button class="study-btn known" id="restartWeek4Quiz" type="button">Try again</button></div>
+                </section>
+              </div>
+            </article>
+          </div>
+          <div class="week-content-grid" id="week5Content" hidden>
+            <article class="material-card">
+              <div class="material-card-head">
+                <div><div class="section-kicker">In-class discussion</div><h3>Part 5 — Front Mid-Low vs Front-Low</h3><p class="material-intro">These transcript-based questions move from articulation to listening cues, spelling, and connected speech. They are not graded.</p></div>
+                <div class="material-stat"><strong>14</strong><span>questions</span></div>
+              </div>
+              <div class="question-groups">
+                <details class="question-group" open>
+                  <summary><span class="question-group-no">01</span><span class="question-group-title"><strong>Articulation</strong><span>Two front, lax vowels at different heights</span></span><span class="question-toggle">Close</span></summary>
+                  <ol class="question-list">
+                    <li>Why can /ɛ/ and /æ/ be difficult for non-native speakers to distinguish?</li>
+                    <li>How does the recording describe the tongue and facial-muscle setting for /ɛ/?</li>
+                    <li>How are the jaw, middle of the tongue, and tongue tip positioned for /æ/?</li>
+                    <li>Why can /æ/ require noticeable muscular effort even though it is traditionally classified as lax?</li>
+                  </ol>
+                </details>
+                <details class="question-group">
+                  <summary><span class="question-group-no">02</span><span class="question-group-title"><strong>What listeners notice</strong><span>Quality, length, and consonant context</span></span><span class="question-toggle">Open</span></summary>
+                  <ol class="question-list" start="5">
+                    <li>What familiar sound does the recording use to help learners remember /æ/?</li>
+                    <li>How do <i>men</i> and <i>man</i> demonstrate the contrast between /ɛ/ and /æ/?</li>
+                    <li>Besides vowel quality, which timing difference does the recording highlight in <i>men</i> and <i>man</i>?</li>
+                    <li>What happens to /æ/ before nasal consonants and certain voiced consonants?</li>
+                    <li>How do <i>fan–fat</i> and <i>bag–back</i> illustrate the effect of the following consonant?</li>
+                  </ol>
+                </details>
+                <details class="question-group">
+                  <summary><span class="question-group-no">03</span><span class="question-group-title"><strong>Spelling and variation</strong><span>Common patterns and unusual forms</span></span><span class="question-toggle">Open</span></summary>
+                  <ol class="question-list" start="10">
+                    <li>Which spellings most commonly represent /ɛ/ in the word lists? Give examples.</li>
+                    <li>Which spelling most commonly represents /æ/, and which unusual spellings are mentioned?</li>
+                    <li>The recording calls <i>ant–aunt</i> homophones. Why might speakers of another accent pronounce this pair differently?</li>
+                  </ol>
+                </details>
+                <details class="question-group">
+                  <summary><span class="question-group-no">04</span><span class="question-group-title"><strong>Minimal pairs and transfer</strong><span>From isolated words to connected speech</span></span><span class="question-toggle">Open</span></summary>
+                  <ol class="question-list" start="13">
+                    <li>Choose five /æ/–/ɛ/ minimal pairs from the recording. Which acoustic or articulatory cue helps you most?</li>
+                    <li>Why is it useful to practise sentences that contain both vowels rather than only separate word lists?</li>
+                  </ol>
+                </details>
+              </div>
+            </article>
+
+            <article class="material-card">
+              <div class="material-card-head">
+                <div><div class="section-kicker">Independent self-check</div><h3>Check your understanding of /ɛ/ and /æ/</h3><p class="material-intro">Complete the test after listening. Each answer is checked immediately, and the answer choices are shuffled on every attempt.</p></div>
+                <div class="material-stat"><strong id="week5SelfCheckScore">0%</strong><span>best score</span></div>
+              </div>
+              <div class="self-check-grid single">
+                <section class="assessment-panel" aria-labelledby="week5QuizTitle">
+                  <div class="assessment-panel-head"><div><h4 id="week5QuizTitle">Front mid-low and front-low vowels — listening comprehension</h4><p>Choose the best answer based on Part 5 of the recording.</p></div><span class="assessment-count">10 questions</span></div>
+                  <div id="week5QuizMain">
+                    <div class="quiz-progress" aria-hidden="true"><div class="quiz-progress-fill" id="week5QuizProgress"></div></div>
+                    <div class="quiz-number" id="week5QuizNumber"></div>
+                    <div class="quiz-question" id="week5QuizQuestion"></div>
+                    <div class="quiz-options" id="week5QuizOptions"></div>
+                    <div class="quiz-explanation" id="week5QuizExplanation" aria-live="polite"></div>
+                    <div class="assessment-actions"><button class="study-btn known" id="checkWeek5Quiz" type="button">Check answer</button><button class="study-btn" id="nextWeek5Quiz" type="button" hidden>Next question</button><span class="assessment-feedback" id="week5QuizFeedback"></span></div>
+                  </div>
+                  <div class="quiz-result" id="week5QuizResult"><strong id="week5QuizResultScore"></strong><p id="week5QuizResultText"></p><button class="study-btn known" id="restartWeek5Quiz" type="button">Try again</button></div>
+                </section>
+              </div>
+            </article>
+          </div>
           <div class="empty-material" id="weekContentEmpty" hidden>Discussion questions and self-check activities for this week will be added with its transcript.</div>
         </section>
 
@@ -1082,8 +1298,8 @@
       ['Introduction — British vs American Pronunciation','Begin the project by comparing two major pronunciation models and establishing a careful listening routine.','Notice selected differences between British and American pronunciation without treating either variety as the only correct model.'],
       ['Vowels','Explore how vowels are defined through syllable structure, why spelling can mislead, and how the American vowel inventory is organised.','Explain the parts of a syllable, distinguish monophthongs from diphthongs, and account for the 15 American vowel phonemes.'],
       ['Vowel Diagram','Use the vowel diagram as a practical map for organising what the ear hears.','Connect vowel position, tongue movement, and the sound contrasts in the recording.'],
-      ['Front High Vowels [iː] vs [ɪ]','Focus closely on a high-frequency contrast in words and connected speech.','Distinguish [iː] and [ɪ] through sound quality, duration, and context.'],
-      ['Voicing and vibration','Use voicing as a clue when consonants sound very similar.','Distinguish voiced and voiceless pairs in short listening extracts.'],
+      ["Front High Vowels /i/ vs /ɪ/", "Train the contrast between the tense, peripheral /i/ and the lax, slightly lower and more central /ɪ/ — first in words, then in minimal pairs and sentences.", "Hear the difference before producing it: use tongue position, muscular tension, and meaning to distinguish /i/ and /ɪ/."],
+      ["Front Mid-Low vs Front-Low Vowels /ɛ/ vs /æ/", "Train two front, lax vowels by noticing tongue height, jaw opening, and the way /æ/ changes before particular consonants.", "Use articulation and context to distinguish /ɛ/ in men from /æ/ in man — in minimal pairs and in sentences."],
       ['Stops and aspiration','Notice release, aspiration, and unreleased final sounds.','Identify stop consonants even when their release is subtle.'],
       ['Fricatives in contrast','Focus on continuous airflow and easily confused fricatives.','Use context and sound detail to separate key fricative pairs.'],
       ['Affricates and clear endings','Listen closely to compound consonant sounds and word endings.','Catch final sound information that supports accurate meaning.'],
@@ -1136,16 +1352,14 @@
       navLinks.filter(link => !link.classList.contains('week-link')).forEach(link => link.classList.remove('active'));
       weekLinks.forEach(link => link.classList.toggle('active', Number(link.dataset.week) === currentWeek));
       updateWeekAudio(currentWeek);
-      const hasMaterials = currentWeek >= 1 && currentWeek <= 3;
-      document.getElementById('week1Content').hidden = currentWeek !== 1;
-      document.getElementById('week2Content').hidden = currentWeek !== 2;
-      document.getElementById('week3Content').hidden = currentWeek !== 3;
+      const materialWeeks = [1,2,3,4,5];
+      const hasMaterials = materialWeeks.includes(currentWeek);
+      materialWeeks.forEach(week => { document.getElementById(`week${week}Content`).hidden = currentWeek !== week; });
       document.getElementById('weekContentEmpty').hidden = hasMaterials;
       const hasVocabulary = Boolean(flashcardDataByWeek[currentWeek]);
       document.getElementById('flashcardsSection').hidden = !hasVocabulary;
       document.getElementById('vocabularyPreviewEmpty').hidden = hasVocabulary;
-      document.getElementById('week2-theory-practice').hidden = currentWeek !== 2;
-      document.getElementById('week3-theory-practice').hidden = currentWeek !== 3;
+      [2,3,4,5].forEach(week => { document.getElementById(`week${week}-theory-practice`).hidden = currentWeek !== week; });
       if(hasVocabulary) loadCardsForWeek(currentWeek);
       document.getElementById('materialsKicker').textContent = hasMaterials ? `After listening · Week ${currentWeek}` : `Week ${currentWeek} materials`;
       document.getElementById('materialsTitle').textContent = hasMaterials ? 'Discuss and check' : `${data[0]} — materials coming next`;
@@ -1158,7 +1372,7 @@
     function showPage(page,scrollToTop=true){
       pageSections.forEach(section => {
         const belongs = section.dataset.page === page;
-        const specificWeek = section.id === 'week2-theory-practice' ? 2 : section.id === 'week3-theory-practice' ? 3 : 0;
+        const theoryMatch = section.id.match(/^week(\d+)-theory-practice$/); const specificWeek = theoryMatch ? Number(theoryMatch[1]) : 0;
         section.hidden = !belongs || (specificWeek && currentWeek !== specificWeek);
       });
       navLinks.forEach(link => {
@@ -1488,6 +1702,107 @@
     document.getElementById('restartWeek3Quiz').addEventListener('click', startWeek3Quiz);
     startWeek3Quiz();
 
+    /* Weeks 4–5: shared quiz and practice engines */
+    function setupWeekQuiz(prefix, data, retryText){
+      const id = suffix => document.getElementById(prefix + suffix);
+      const cap = prefix.charAt(0).toUpperCase() + prefix.slice(1);
+      const storageKey = `listeningProject2026.${prefix}.quiz`;
+      let best = 0, index = 0, score = 0, checked = false, orders = [];
+      try { best = Number(localStorage.getItem(storageKey) || 0); } catch(error) {}
+      id('SelfCheckScore').textContent = `${best}%`;
+      function render(){
+        const item = data[index];
+        checked = false;
+        id('QuizNumber').textContent = `Question ${index + 1} of ${data.length}`;
+        id('QuizQuestion').textContent = item.question;
+        id('QuizProgress').style.width = `${index / data.length * 100}%`;
+        id('QuizOptions').innerHTML = orders[index].map((originalIndex,displayIndex) => `<label class="quiz-option"><input type="radio" name="${prefix}Quiz" value="${originalIndex}"><span class="option-letter">${String.fromCharCode(65 + displayIndex)}</span><span>${item.options[originalIndex]}</span></label>`).join('');
+        id('QuizOptions').querySelectorAll('input').forEach(input => input.addEventListener('change', () => {
+          id('QuizOptions').querySelectorAll('.quiz-option').forEach(option => option.classList.remove('selected'));
+          input.closest('.quiz-option').classList.add('selected');
+          id('QuizFeedback').textContent = '';
+        }));
+        id('QuizExplanation').className = 'quiz-explanation';
+        id('QuizExplanation').textContent = '';
+        id('QuizFeedback').textContent = '';
+        document.getElementById(`check${cap}Quiz`).hidden = false;
+        document.getElementById(`next${cap}Quiz`).hidden = true;
+      }
+      function start(){
+        index = 0; score = 0; checked = false;
+        orders = data.map(item => shuffledIndexes(item.options.length));
+        id('QuizMain').style.display = 'block';
+        id('QuizResult').style.display = 'none';
+        render();
+      }
+      document.getElementById(`check${cap}Quiz`).addEventListener('click', () => {
+        const selected = document.querySelector(`input[name="${prefix}Quiz"]:checked`);
+        const feedback = id('QuizFeedback');
+        if(!selected){ feedback.textContent = 'Choose one answer first.'; feedback.className = 'assessment-feedback error'; return; }
+        if(checked) return;
+        checked = true;
+        const chosen = Number(selected.value);
+        const correct = chosen === data[index].answer;
+        if(correct) score++;
+        id('QuizOptions').querySelectorAll('.quiz-option').forEach(option => {
+          const value = Number(option.querySelector('input').value);
+          option.querySelector('input').disabled = true;
+          option.classList.toggle('correct', value === data[index].answer);
+          option.classList.toggle('incorrect', value === chosen && !correct);
+        });
+        feedback.textContent = correct ? 'Correct' : 'Not quite';
+        feedback.className = `assessment-feedback ${correct ? 'success' : 'error'}`;
+        id('QuizExplanation').textContent = data[index].explanation;
+        id('QuizExplanation').className = 'quiz-explanation visible';
+        document.getElementById(`check${cap}Quiz`).hidden = true;
+        const nextButton = document.getElementById(`next${cap}Quiz`);
+        nextButton.hidden = false;
+        nextButton.textContent = index === data.length - 1 ? 'See results' : 'Next question';
+      });
+      document.getElementById(`next${cap}Quiz`).addEventListener('click', () => {
+        if(index < data.length - 1){ index++; render(); return; }
+        const percent = Math.round(score / data.length * 100);
+        best = Math.max(best, percent);
+        try { localStorage.setItem(storageKey, String(best)); } catch(error) {}
+        id('SelfCheckScore').textContent = `${best}%`;
+        id('QuizMain').style.display = 'none';
+        id('QuizResult').style.display = 'block';
+        id('QuizResultScore').textContent = `${score} / ${data.length}`;
+        id('QuizResultText').textContent = score === data.length ? 'Excellent — every answer is correct.' : retryText;
+      });
+      document.getElementById(`restart${cap}Quiz`).addEventListener('click', start);
+      start();
+    }
+    function setupSelectPractice(config){
+      const rowsBox = document.getElementById(config.rows);
+      const feedback = document.getElementById(config.feedback);
+      function render(){
+        rowsBox.innerHTML = config.data.map((item,index) => config.row(item,index)).join('');
+        feedback.textContent = ''; feedback.className = 'assessment-feedback';
+      }
+      document.getElementById(config.check).addEventListener('click', () => {
+        const rows = [...rowsBox.querySelectorAll('.practice-row')];
+        if(!rows.every(row => row.querySelector('select').value)){ feedback.textContent = 'Complete every item first.'; feedback.className = 'assessment-feedback error'; return; }
+        let score = 0;
+        rows.forEach((row,index) => { const correct = row.querySelector('select').value === config.data[index].answer; row.classList.toggle('correct',correct); row.classList.toggle('incorrect',!correct); if(correct) score++; });
+        feedback.textContent = `${score} / ${config.data.length} correct`;
+        feedback.className = `assessment-feedback ${score === config.data.length ? 'success' : 'error'}`;
+      });
+      document.getElementById(config.reset).addEventListener('click', render);
+      render();
+    }
+    const escapeHtml = value => String(value).replace(/[&<>"]/g, char => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[char]));
+    function setupWeekPractice(prefix, vowels, articulation, context){
+      setupSelectPractice({rows:`${prefix}ArticulationRows`, check:`${prefix}CheckArticulation`, reset:`${prefix}ResetArticulation`, feedback:`${prefix}ArticulationFeedback`, data:articulation,
+        row:(item,index) => `<div class="practice-row classification-row articulation-row"><strong>${escapeHtml(item.text)}</strong><select class="mini-select" aria-label="Vowel for: ${escapeHtml(item.text)}"><option value="">Choose a vowel</option>${vowels.map(vowel => `<option value="${vowel}">${vowel}</option>`).join('')}</select></div>`});
+      setupSelectPractice({rows:`${prefix}ContextRows`, check:`${prefix}CheckContext`, reset:`${prefix}ResetContext`, feedback:`${prefix}ContextFeedback`, data:context,
+        row:(item,index) => `<div class="practice-row classification-row context-row"><strong>${escapeHtml(item.sentence)}<span class="sound-anchor">${item.choices.join(' — ')}</span></strong><select class="mini-select" aria-label="Complete: ${escapeHtml(item.sentence)}"><option value="">Choose a word</option>${item.choices.map(choice => `<option value="${choice}">${choice}</option>`).join('')}</select></div>`});
+    }
+    setupWeekQuiz('week4', [{"question": "Which description best matches the tongue position for /i/?", "options": ["Very high and front, with the mouth almost closed.", "Slightly lower and central, with the mouth more open.", "Low and back, with the lips strongly rounded forward.", "Mid-central and relaxed, with no stable tongue setting."], "explanation": "/i/ is the highest and most front vowel in this contrast; the mouth is nearly closed.", "answer": 0}, {"question": "Why does the recording classify /i/ as a tense vowel?", "options": ["It uses greater muscular effort and a peripheral tongue position.", "It occurs only in stressed syllables and is always noticeably longer.", "It requires completely closed lips and blocked oral airflow.", "It is produced centrally with a relaxed tongue and jaw."], "explanation": "The recording connects tenseness with the front, high position and extra muscular effort.", "answer": 0}, {"question": "How is /ɪ/ positioned in comparison with /i/?", "options": ["It is slightly lower and somewhat more central in the mouth.", "It is much lower and farther back near the throat.", "It is equally high but produced with completely closed lips.", "It is farther forward and requires greater muscular tension."], "explanation": "/ɪ/ remains high and front, but it is lower and more central than /i/.", "answer": 0}, {"question": "Which production instruction belongs to /ɪ/?", "options": ["Keep the tongue high while relaxing the rest of the vocal tract.", "Pull the lips back strongly and raise the tongue as high as possible.", "Round and protrude the lips while lowering the back of the tongue.", "Close the mouth completely and release the air through the nose."], "explanation": "For /ɪ/, the tongue is high, the mouth is slightly more open, and the vocal tract is relaxed.", "answer": 0}, {"question": "Why can confusing /i/ and /ɪ/ cause communication problems?", "options": ["Many word pairs differ only in this vowel and have unrelated meanings.", "The vowels change every consonant that follows them in a word.", "The contrast occurs only in names and therefore affects identification.", "English spelling always marks the vowels with the same written letter."], "explanation": "Minimal pairs such as ship–sheep show that the contrast can change the entire word and meaning.", "answer": 0}, {"question": "Which pair correctly contrasts lax /ɪ/ first and tense /i/ second?", "options": ["bit — beat", "beat — bit", "bad — bed", "book — boot"], "explanation": "“Bit” contains /ɪ/, while “beat” contains /i/.", "answer": 0}, {"question": "Which set contains spelling patterns used for /i/ in the recording?", "options": ["ea, ee, e, ie, i, and eo", "a, ai, ay, au, aw, and oa", "oo, ou, u, ew, ue, and ui", "ir, ur, er, ear, or, and ar"], "explanation": "The recording groups /i/ words under ea, ee, e, ie, i, and eo.", "answer": 0}, {"question": "Which word contains the lax vowel /ɪ/?", "options": ["women", "people", "theme", "field"], "explanation": "“Women” is listed as an unusual spelling example for /ɪ/.", "answer": 0}, {"question": "What is the main purpose of minimal-pair practice?", "options": ["To isolate one sound contrast while keeping other sounds constant.", "To memorise written spelling rules without comparing any spoken examples.", "To lengthen every vowel before any final consonant sound.", "To replace sentence practice with lists of unrelated vocabulary."], "explanation": "Minimal pairs focus attention on the one phoneme that changes meaning.", "answer": 0}, {"question": "Why does the recording also practise the vowels in sentences?", "options": ["To transfer the contrast from isolated words into meaningful speech.", "To prove that vowel quality disappears in connected speech.", "To show that spelling becomes completely regular in longer spoken phrases.", "To make each target vowel equally long in every speaking context."], "explanation": "Sentence drills help learners maintain the contrast during fluent, meaningful production and listening.", "answer": 0}], "Review the explanations, then listen again for tongue height and tension.");
+    setupWeekPractice('week4', ["/i/", "/ɪ/"], [{"text": "Tongue at the highest, most front position", "answer": "/i/"}, {"text": "Tongue slightly lower and more central", "answer": "/ɪ/"}, {"text": "Lips drawn slightly back", "answer": "/i/"}, {"text": "Mouth slightly more open", "answer": "/ɪ/"}, {"text": "More muscular effort", "answer": "/i/"}, {"text": "Relaxed vocal tract", "answer": "/ɪ/"}], [{"sentence": "Please take a ___ near the window.", "choices": ["seat", "sit"], "answer": "seat"}, {"sentence": "The ___ sailed out of the harbor.", "choices": ["sheep", "ship"], "answer": "ship"}, {"sentence": "These shoes do not ___ my feet.", "choices": ["feet", "fit"], "answer": "fit"}, {"sentence": "I could ___ the warmth of the sun.", "choices": ["fill", "feel"], "answer": "feel"}, {"sentence": "Can you ___ the top shelf?", "choices": ["rich", "reach"], "answer": "reach"}]);
+    setupWeekQuiz('week5', [{"question": "Why are /ɛ/ and /æ/ easy for some learners to confuse?", "options": ["Both are front vowels traditionally classified as lax.", "Both are back vowels produced with rounded lips.", "Both are central vowels found only in weak, unstressed syllables.", "Both are tense vowels made with a nearly closed jaw."], "explanation": "The recording identifies both sounds as front and lax; their main difference is tongue height.", "answer": 0}, {"question": "How does tongue height distinguish the two vowels?", "options": ["/ɛ/ is mid-low, while /æ/ is low.", "/ɛ/ is high, while /æ/ is mid-high.", "/ɛ/ is low, while /æ/ is mid-low.", "/ɛ/ is central, while /æ/ is back."], "explanation": "The recording places /ɛ/ at a front mid-low position and /æ/ at a front low position.", "answer": 0}, {"question": "Which instruction best describes the production of /ɛ/?", "options": ["Keep the mouth relaxed and release air from a middle tongue position.", "Open the jaw widely and press the tongue tip against the upper teeth.", "Round the lips firmly and raise the back of the tongue as high as possible.", "Close the oral passage and direct all airflow through the nasal cavity."], "explanation": "For /ɛ/, the recording recommends relaxed lips and mouth with the tongue in a middle position.", "answer": 0}, {"question": "Which detail belongs to the production of /æ/?", "options": ["The tongue tip touches behind the lower teeth as the jaw opens.", "The tongue tip curls upward while the lips become tightly rounded.", "The tongue remains fully central while the jaw is nearly closed.", "The tongue blocks the oral passage while air leaves through the nose."], "explanation": "For /æ/, the jaw opens, the middle of the tongue rises, and the tip touches behind the lower teeth.", "answer": 0}, {"question": "What happens to /æ/ before nasal consonants in the recording?", "options": ["It becomes longer and tenser in its phonetic realization.", "It changes into /ɛ/ and loses its original identity.", "It becomes shorter and moves toward a back vowel position.", "It disappears completely and leaves only the nasal consonant."], "explanation": "The recording describes /æ/ as lengthened and tensed before nasals such as /n/ and /m/.", "answer": 0}, {"question": "Which pair is used to introduce the /ɛ/–/æ/ contrast?", "options": ["men — man", "sit — seat", "book — boot", "cot — caught"], "explanation": "The recording uses “men” and “man” to make the contrast immediately noticeable.", "answer": 0}, {"question": "Which word is listed as an unusual spelling for /æ/?", "options": ["plaid", "bread", "weather", "treasure"], "explanation": "“Plaid” is one of the unusual /æ/ spellings, together with “laugh” and “meringue.”", "answer": 0}, {"question": "Which word contains /ɛ/ according to the recording?", "options": ["treasure", "travel", "practice", "family"], "explanation": "“Treasure” appears in the /ɛ/ list; the other three words are listed with /æ/.", "answer": 0}, {"question": "Which option is a true /æ/–/ɛ/ minimal pair?", "options": ["bad — bed", "bad — bag", "bed — bell", "bag — back"], "explanation": "“Bad” and “bed” differ in only the target vowel, /æ/ versus /ɛ/.", "answer": 0}, {"question": "Why does the lesson include sentences containing both vowels?", "options": ["To transfer the contrast into meaningful connected speech.", "To show that the two phonemes merge in longer expressions.", "To replace careful listening with written spelling practice.", "To ensure that every vowel has exactly the same duration."], "explanation": "Mixed sentences require learners to preserve the contrast while processing meaning and connected speech.", "answer": 0}], "Review the explanations, then listen again for jaw opening and vowel length.");
+    setupWeekPractice('week5', ["/ɛ/", "/æ/"], [{"text": "Front mid-low tongue position", "answer": "/ɛ/"}, {"text": "Front low tongue position with a wider jaw opening", "answer": "/æ/"}, {"text": "Relaxed lips and mouth from a middle tongue setting", "answer": "/ɛ/"}, {"text": "Tongue tip placed behind the lower teeth", "answer": "/æ/"}, {"text": "The vowel in men and bed", "answer": "/ɛ/"}, {"text": "May lengthen and tense before /n, m, d, g/", "answer": "/æ/"}], [{"sentence": "Please put the book on the ___.", "choices": ["bad", "bed"], "answer": "bed"}, {"sentence": "She wrote the answer with a blue ___.", "choices": ["pan", "pen"], "answer": "pen"}, {"sentence": "Please ___ me some cash.", "choices": ["land", "lend"], "answer": "lend"}, {"sentence": "The farmer brought the ___ back to the barn.", "choices": ["cattle", "kettle"], "answer": "cattle"}, {"sentence": "We ___ outside the café yesterday.", "choices": ["mat", "met"], "answer": "met"}]);
+
     const vowelLocationData = [
       {sound:'/i/',anchor:'beat',answers:['high','front']},
       {sound:'/æ/',anchor:'bat',answers:['low','front']},
@@ -1605,12 +1920,16 @@
         {term:'minimal pair',ipa:'/ˈmɪnəməl pɛr/',example:'beat–bit · kook–cook',translation:'минимальная пара',definition:'Two words that differ in only one phoneme, showing that the contrasting sounds can distinguish meaning.'},
         {term:'diphthong',ipa:'/ˈdɪfˌθɔŋ/',example:'/eɪ/ · /aɪ/ · /ɔɪ/ · /aʊ/ · /oʊ/',translation:'дифтонг',definition:'One vowel phoneme whose quality changes through a continuous glide from one position toward another.'},
         {term:'glide',ipa:'/ɡlaɪd/',example:'movement toward /ɪ/ or /ʊ/',translation:'скольжение',definition:'A smooth movement of the tongue and vowel quality from the beginning of a diphthong toward its final element.'}
-      ]
+      ],
+      4:[{"term": "front high vowel", "ipa": "/frʌnt haɪ ˈvaʊəl/", "example": "/i/ and /ɪ/", "translation": "гласный переднего ряда высокого подъёма", "definition": "A vowel produced with the front of the tongue raised toward the roof of the mouth."}, {"term": "tongue elevation", "ipa": "/tʌŋ ˌɛləˈveɪʃən/", "example": "the height of the tongue", "translation": "подъём языка", "definition": "The degree to which the tongue is raised during the production of a speech sound."}, {"term": "tense vowel", "ipa": "/tɛns ˈvaʊəl/", "example": "/i/ in beat", "translation": "напряжённый гласный", "definition": "A vowel produced with comparatively greater muscular effort and a more peripheral tongue position."}, {"term": "lax vowel", "ipa": "/læks ˈvaʊəl/", "example": "/ɪ/ in bit", "translation": "ненапряжённый гласный", "definition": "A vowel produced with a more relaxed vocal tract and a position closer to the centre of the mouth."}, {"term": "vocal tract", "ipa": "/ˈvoʊkəl trækt/", "example": "tongue · lips · jaw · throat", "translation": "речевой тракт", "definition": "The connected spaces and articulators through which air passes when speech sounds are produced."}, {"term": "draw the lips back", "ipa": "/drɔ ðə lɪps bæk/", "example": "an instruction for /i/", "translation": "слегка растянуть губы", "definition": "To move the corners of the lips slightly backward, helping create the tense /i/ setting."}, {"term": "minimal pair", "ipa": "/ˈmɪnəməl pɛr/", "example": "bit — beat", "translation": "минимальная пара", "definition": "Two words that differ in only one phoneme and therefore isolate one meaningful sound contrast."}, {"term": "vowel contrast", "ipa": "/ˈvaʊəl ˈkɑntræst/", "example": "/i/ versus /ɪ/", "translation": "противопоставление гласных", "definition": "A difference between vowel phonemes that can distinguish one word and meaning from another."}, {"term": "letter combination", "ipa": "/ˈlɛtər ˌkɑmbəˈneɪʃən/", "example": "ea · ee · ie · eo", "translation": "сочетание букв", "definition": "Two or more written letters that work together to represent a speech sound."}, {"term": "sound quality", "ipa": "/saʊnd ˈkwɑləti/", "example": "listen beyond duration", "translation": "качество звука", "definition": "The auditory character of a vowel created by the shape and position of the articulators."}, {"term": "auditory discrimination", "ipa": "/ˈɔdəˌtɔri dɪˌskrɪməˈneɪʃən/", "example": "hear ship and sheep as different", "translation": "различение на слух", "definition": "The ability to perceive a meaningful difference between similar speech sounds."}, {"term": "sentence drill", "ipa": "/ˈsɛntəns drɪl/", "example": "sit in the seat", "translation": "тренировка в предложениях", "definition": "Repeated practice that places a target sound contrast inside meaningful connected language."}],
+      5:[{"term": "front mid-low vowel", "ipa": "/frʌnt ˌmɪd ˈloʊ ˈvaʊəl/", "example": "/ɛ/ in bed", "translation": "гласный переднего ряда средне-нижнего подъёма", "definition": "A vowel made toward the front of the mouth with the tongue between a mid and low position."}, {"term": "front low vowel", "ipa": "/frʌnt loʊ ˈvaʊəl/", "example": "/æ/ in bad", "translation": "гласный переднего ряда нижнего подъёма", "definition": "A vowel made toward the front of the mouth with the tongue positioned low and the jaw more open."}, {"term": "tongue height", "ipa": "/tʌŋ haɪt/", "example": "mid-low versus low", "translation": "высота подъёма языка", "definition": "The vertical position of the tongue that helps determine which vowel is produced."}, {"term": "jaw opening", "ipa": "/dʒɔ ˈoʊpənɪŋ/", "example": "open wider for /æ/", "translation": "степень раскрытия челюсти", "definition": "The amount of space between the upper and lower jaws during sound production."}, {"term": "lax vowel", "ipa": "/læks ˈvaʊəl/", "example": "/ɛ/ and /æ/", "translation": "ненапряжённый гласный", "definition": "A vowel traditionally described as using a relatively relaxed articulatory setting."}, {"term": "nasal consonant", "ipa": "/ˈneɪzəl ˈkɑnsənənt/", "example": "/n/ and /m/", "translation": "носовой согласный", "definition": "A consonant produced with airflow passing through the nose, such as /m/, /n/, or /ŋ/."}, {"term": "voiced consonant", "ipa": "/vɔɪst ˈkɑnsənənt/", "example": "/d/ and /g/", "translation": "звонкий согласный", "definition": "A consonant produced while the vocal folds vibrate."}, {"term": "vowel lengthening", "ipa": "/ˈvaʊəl ˈlɛŋθənɪŋ/", "example": "man compared with men", "translation": "удлинение гласного", "definition": "An increase in the duration of a vowel caused by its phonetic or consonantal context."}, {"term": "vowel tensing", "ipa": "/ˈvaʊəl ˈtɛnsɪŋ/", "example": "/æ/ before /n/", "translation": "усиление напряжённости гласного", "definition": "A contextual change in which a vowel is produced with a tenser quality."}, {"term": "homophone", "ipa": "/ˈhɑməˌfoʊn/", "example": "band — banned", "translation": "омофон", "definition": "A word that has the same pronunciation as another word but a different meaning or spelling."}, {"term": "minimal pair", "ipa": "/ˈmɪnəməl pɛr/", "example": "bad — bed", "translation": "минимальная пара", "definition": "Two words that differ in only one phoneme and therefore isolate one meaningful sound contrast."}, {"term": "unusual spelling", "ipa": "/ʌnˈjuʒuəl ˈspɛlɪŋ/", "example": "laugh · meringue · plaid", "translation": "необычное написание", "definition": "A written form that represents a sound in a less common or less predictable way."}]
     };
     const flashcardMetaByWeek = {
       1:{title:'Core phonetics vocabulary',copy:'Look through the core phonetics terms first. Recognising them will make the recording easier to follow.'},
       2:{title:'Vowel-system vocabulary',copy:'Preview the terms used to explain syllables, spelling, rhoticity, and vowel movement before you listen.'},
-      3:{title:'Vowel-diagram vocabulary',copy:'Learn the terms for reading the vowel map before listening: position, rounding, tenseness, proximity, and glide.'}
+      3:{title:'Vowel-diagram vocabulary',copy:'Learn the terms for reading the vowel map before listening: position, rounding, tenseness, proximity, and glide.'},
+      4:{"title": "Front-high-vowel vocabulary", "copy": "Preview the phonetics language used in the recording: tongue elevation, tense and lax settings, minimal pairs, and spelling patterns."},
+      5:{"title": "Front-low-vowel vocabulary", "copy": "Preview the terms for tongue height, jaw opening, consonant context, and spelling before you listen."}
     };
     const cardScene = document.getElementById('flashcardScene');
     const cardMain = document.getElementById('flashcardMain');
@@ -1716,7 +2035,8 @@
       1:{title:'Introduction — British vs American Pronunciation',src:'assets/1_English%20Pronunciation_the%20American%20Way.mp3',duration:'11:36',focus:'British · American',phonetic:'two pronunciation models',description:'Listen for differences in vowel quality, consonant realisation, stress, and rhythm.'},
       2:{title:'Part 1 — Vowels',src:'assets/2_PartI_Vowels.mp3',duration:'21:41',focus:'vowels · syllables',phonetic:'nucleus · monophthong · diphthong',description:'Follow how the recording moves from syllable structure and spelling to the 15 vowel phonemes of standard American English.'},
       3:{title:'Vowel Diagram',src:'assets/3_Vowel%20Diagram.mp3',duration:'11:10',focus:'front · central · back',phonetic:'high · mid · low',description:'Use the diagram as a listening map that connects tongue position with the vowel quality you hear.'},
-      4:{title:'Front High Vowels [iː] vs [ɪ]',src:'assets/4_Front%20high%20vowels.mp3',duration:'16:01',focus:'sheep · ship',phonetic:'/iː/ · /ɪ/',description:'Compare sound quality and duration, then listen for the contrast inside words and short phrases.'}
+      4:{"title": "Part 4 — Front High Vowels", "src": "assets/4_Front%20high%20vowels.mp3", "duration": "16:01", "focus": "sheep · ship", "phonetic": "/i/ · /ɪ/", "description": "Listen for tongue height, muscular tension, and lip setting, then keep the contrast in minimal pairs and sentences."},
+      5:{"title": "Part 5 — Front Mid-Low vs Front-Low", "src": "assets/5_Front-mid-low%20vs%20front-low.mp3", "duration": "10:36", "focus": "men · man", "phonetic": "/ɛ/ · /æ/", "description": "Notice the wider jaw opening for /æ/ and how it lengthens and tenses before nasal and voiced consonants such as /n, m, d, g/."}
     };
     let speed = 1;
     const formatTime = seconds => {
@@ -1817,7 +2137,9 @@
     const weeklyContentSection = document.getElementById('week-content');
     weeklyContentSection.after(
       document.getElementById('week2-theory-practice'),
-      document.getElementById('week3-theory-practice')
+      document.getElementById('week3-theory-practice'),
+      document.getElementById('week4-theory-practice'),
+      document.getElementById('week5-theory-practice')
     );
     const week1SelfCheckGrid = document.querySelector('#selfCheck .self-check-grid');
     const week1MultipleChoice = week1SelfCheckGrid.querySelector('[aria-labelledby="quizTitle"]');

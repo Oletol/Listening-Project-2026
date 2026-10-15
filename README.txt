@@ -12,10 +12,13 @@ The interface uses a readability-focused type scale across body copy, navigation
 
 Week 2 is connected to Part 1 — Vowels. It includes 14 pre-listening flashcards, 15 transcript-based classroom discussion questions in five themes, and an eight-question automatically assessed multiple-choice quiz with shuffled options, explanations, and a locally saved best score.
 
-Audio is currently connected for Weeks 1–4:
+Weeks 4 and 5 follow the same pattern: 12 pre-listening flashcards, transcript-based in-class discussion questions in four themes (13 for Week 4, 14 for Week 5), a ten-question automatically assessed multiple-choice quiz, and a theory-and-practice block with two sound profiles, a spelling map, two automatically checked practice tasks, and a final speaking pass.
+
+Audio is currently connected for Weeks 1–5:
 1. Introduction — British vs American Pronunciation
 2. Vowels
 3. Vowel Diagram
-4. Front High Vowels [iː] vs [ɪ]
+4. Front High Vowels /i/ vs /ɪ/
+5. Front Mid-Low vs Front-Low Vowels /ɛ/ vs /æ/
 
 The Cherdak brand links to https://t.me/engattic. Author and narrator credits link to their Audible pages.
